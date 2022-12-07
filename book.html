@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <!--<link rel="stylesheet" href="css/books_flex.css">-->
+     <!-- Hamburger Menu Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BOOK - JUICY PLUM</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
@@ -20,15 +22,28 @@
 
     <header>
         <a class="skip" href="#main">Skip To The Good Part :)</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a class="current_page" href="book.html">Book</a></li>
-                <li><a href="movie.html">Movie</a></li>
-            </ul>
-        </nav>
+        <div class="topnav">
+            <a href="javascript:void(0);" class="menu" id="closed" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                Menu
+            </a>
+            <p class="header-logo"><a href="index.html">JUICY PLUM</a></p>
+            <nav id="myLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a class="active" href="book.html">Book</a></li>
+                    <li><a href="movie.html">Movie</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <div class="wrapper">
+
+        <div class="home-banner-book">
+        </div>
+    </div>
 
     <main id="main">
         <div class="home-banner-book">
@@ -97,7 +112,7 @@
                     <a href="https://www.amazon.com/Never-Thought-That-Way-Conversations/dp/1637740328/ref=asc_df_1637740328/?tag=hyprod-20&linkCode=df0&hvadid=532538219923&hvpos=&hvnetw=g&hvrand=16853008373775438445&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9060451&hvtargid=pla-1395462607113&psc=1">Buy!</a><br>
                 </div>
                 <div class="text3-book">
-                    <h3><span style="color:rgb(38, 38, 184, 0)">------------extra space</span>Hair Love<span style="color:rgb(38, 38, 184, 0)">------extra space</span></h3>
+                    <h3>Hair Love</h3>
                     <img src="images/sam/hair-love.jpeg" alt="hair-love">
                     <p>By Matthew Cherry</p>
                     <p>Rating: 8.5/10</p>
@@ -123,6 +138,8 @@
         <p><a href="mailto:obiari@umich.edu">obiari@umich.edu</a></p>
         <p><a href="mailto:sdannug@umich.edu">sdannug@umich.edu</a></p>
     </footer>
+
+    <script src="js/nav.js"></script>
 
 </body>
 </html>
